@@ -31,6 +31,7 @@ def focal_loss(y_true: np.ndarray, y_pred: np.ndarray, alpha: float = 0.25, gamm
         A tuple containing the name of the loss function, the value of the loss, and a 
         Boolean value indicating whether the loss is evaluative or not.
     """
+
     # Compute the cross-entropy loss
     ce_loss = -(y_true * np.log(y_pred) + (1 - y_true) * np.log(1 - y_pred))
 
